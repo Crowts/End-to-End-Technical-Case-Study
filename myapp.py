@@ -100,9 +100,9 @@ def predict():
         print("Cluster ", i+1)
         print(cluster)
         print("")
-        category = cluster_assignment[i]
+        #category = cluster_assignment[i]
 
-    return render_template('index.html', prediction=transcription, category=category)
+    return render_template('index.html', prediction=transcription)
 
 if __name__ == '__main__':
     myapp.run(debug=True,port=3000)

@@ -9,10 +9,10 @@
   </head>
 
   <body>
-    <h1 class="text-center">Voice Request Classifier</h1>
+    <h1 class="text-center">Voice Request Service</h1>
 
     <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
-      <input class="form-control" type="file" name="audiofile">
+      <input class="form-control" type="file" accept=".wav" name="audiofile" multiple>
       <input class="btn btn-primary mt-3" type="submit" value="Predict Fulfilment Category">
     </form>
 
@@ -21,7 +21,7 @@
     {% endif %}
 
     {% if prediction %}
-        <p class="text-center"> Category: {{Category}}  </p>
+        <p class="text-center"> Category:  </p>
     {% endif %}
 
 
