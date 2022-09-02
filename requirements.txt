@@ -1,0 +1,14 @@
+jupyter-notebook
+torch
+torchaudio
+librosa
+numpy
+scipy
+soundfile
+IPython
+transformers
+sentence-transformers
+huggingface_hub
+nltk
+flask
+gevent

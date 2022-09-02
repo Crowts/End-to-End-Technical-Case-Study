@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Service Requests</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <h1 class="text-center">Voice Request Classifier</h1>
+
+    <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+      <input class="form-control" type="file" name="audiofile">
+      <input class="btn btn-primary mt-3" type="submit" value="Predict Fulfilment Category">
+    </form>
+
+    {% if prediction %}
+        <p class="text-center"> Request: {{prediction}} </p>
+    {% endif %}
+
+    {% if prediction %}
+        <p class="text-center"> Category: {{Category}}  </p>
+    {% endif %}
+
+
+
+  </body>
+
+</html>
