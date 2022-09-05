@@ -5,11 +5,9 @@ A simple deployment of an AI driven model for the categorisation of customer req
  The business wants to implement banking services where customers can request services via a WhatsApp voice note. The business wants to establish in real-time what service the customer is requesting so they can trigger some upstream process. The requirement is to build a model that will ingest the audio recording and determine what service fulfilment category they belong to.  
 
 ## AI Functionality
-The AI functionality is comprised of two parts. The first uses a pre-trained [XLS-R](https://huggingface.co/facebook/wav2vec2-xls-r-1b) model to transcribe audio files and the second uses [Sentence-transformer](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) embeddings to generate representations of the transcription before applying K-means clustering. 
--
-<br>
+The AI functionality is comprised of two parts. The first uses a pre-trained [XLS-R](https://huggingface.co/facebook/wav2vec2-xls-r-1b) model to transcribe audio files and the second uses [Sentence-transformer](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) embeddings to generate representations of the transcription before applying K-means clustering.
 
-# Requirements
+## Requirements
 The following requirements are necessary to run this project. If you are working in a virtual environment locally, you can do
 ```sh
 pip install -r requirements.txt
