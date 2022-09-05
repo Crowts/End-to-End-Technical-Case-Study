@@ -88,7 +88,7 @@ def predict():
     embedder = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
     corpus_embeddings = embedder.encode(df)
 
-    num_clusters = 1
+    num_clusters = 10
     clustering_model = KMeans(n_clusters=num_clusters) # Define kmeans model
     clustering_model.fit(corpus_embeddings) # Fit the embedding with kmeans clustering.
     cluster_assignment = clustering_model.labels_ # Get the cluster id assigned to each news headline.

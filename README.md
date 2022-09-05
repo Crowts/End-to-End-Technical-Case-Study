@@ -56,5 +56,5 @@ python myapp.py
 ## References
 [Huggingface](https://huggingface.co/)
 <br/>
-[Sentence-transformers](https://pypi.org/project/sentence-transformers/)
+[Sentence-transformers](https://pypi.org/project/sentence-transformers/) <br/>
 [flask](https://flask.palletsprojects.com/en/2.2.x/quickstart/)
