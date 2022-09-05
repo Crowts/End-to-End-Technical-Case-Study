@@ -85,7 +85,7 @@ def predict():
 
     df = readFile('data.txt')
 
-    embedder = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
+    embedder = SentenceTransformer('all-MiniLM-L6-v2')
     corpus_embeddings = embedder.encode(df)
 
     num_clusters = 10
